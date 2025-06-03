@@ -1,7 +1,10 @@
-import 'package:family_friends/screens/home_screen.dart';
+import 'package:family_friends/autorization/splash_screen.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const FamilyFriends());
 }
 
@@ -10,6 +13,6 @@ class FamilyFriends extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Family & Friends', home: HomeScreen());
+    return MaterialApp(title: 'Авторизация', home: SplashScreen());
   }
 }
