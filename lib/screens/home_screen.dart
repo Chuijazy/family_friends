@@ -1,4 +1,4 @@
-import 'package:family_friends/screens/second_screen.dart';
+import 'package:family_friends/chat/chat1_screen.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => SecondScreen(),
+                            builder: (context) => Chat1Screen(),
                           ),
                         );
                       },
