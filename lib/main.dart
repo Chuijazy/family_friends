@@ -1,4 +1,4 @@
-import 'package:family_friends/screens/main_screen.dart';
+import 'package:family_friends/autorization/register_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,6 +10,6 @@ class FamilyFriends extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(title: 'Авторизация', home: MainScreen());
+    return MaterialApp(title: 'Авторизация', home: RegisterScreen());
   }
 }
